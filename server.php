@@ -21,7 +21,7 @@ if (isset($_POST['reg_user'])) {
   // by adding (array_push()) corresponding error unto $errors array
   if (empty($username)) { array_push($errors, "Username is required"); }
   if (empty($email)) { array_push($errors, "Email is required"); }
-  if (empty($password_1)) { array_push($errors, "Password is required"); }
+  if (empty($password_1)) { array_push($errors, "Password richiesta"); }
   if ($password_1 != $password_2) {
 	array_push($errors, "Le password non corrispondono");
   }
